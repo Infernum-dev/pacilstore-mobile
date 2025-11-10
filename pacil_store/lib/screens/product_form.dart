@@ -177,6 +177,9 @@ class _ProductFormPageState extends State<ProductFormPage> {
                         return "Masukkan URL yang valid (contoh: https://example.com/gambar.jpg)";
                       }
                     }
+                    if (value == null || value.isEmpty) {
+                      return "Kategori produk tidak boleh kosong!";
+                    }
                     return null;
                   },
                 ),
